@@ -1,16 +1,327 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="preconnect" href="https://fonts.gstatic.com"> 
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
-</head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="font/font.css">
+    <title>LinkedIn</title>
+    </head>
 <body>
-  
+    <header class="network-header">
+        <div class="container-fluid">
+            <div class="row no-gutters align-items-center">
+                <div class="col">
+                    <div class="network-header_logo">
+                        <img src="img/logo.svg" alt="linkedin">
+                    </div>
+                </div>
+                <div class="col-3">
+                    <ul class="nav">
+                        <li class="nav-item network-header_item">
+                            <a class="nav-link network-header_link" href="#">
+                                <svg class="network-header__svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M4 11C6.38695 11 8.67613 11.9482 10.364 13.636C12.0518 15.3239 13 17.6131 13 20" stroke="#181818" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M4 4C8.24346 4 12.3131 5.68571 15.3137 8.68629C18.3143 11.6869 20 15.7565 20 20" stroke="#181818" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M5 20C5.55228 20 6 19.5523 6 19C6 18.4477 5.55228 18 5 18C4.44772 18 4 18.4477 4 19C4 19.5523 4.44772 20 5 20Z" stroke="#181818" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                Feed
+                            </a>
+                        </li>
+                        <li class="nav-item network-header_item">
+                            <a class="nav-link network-header_link" href="#">
+                                <svg class="network-header__svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M17 21V19C17 17.9391 16.5786 16.9217 15.8284 16.1716C15.0783 15.4214 14.0609 15 13 15H5C3.93913 15 2.92172 15.4214 2.17157 16.1716C1.42143 16.9217 1 17.9391 1 19V21" stroke="#181818" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M9 11C11.2091 11 13 9.20914 13 7C13 4.79086 11.2091 3 9 3C6.79086 3 5 4.79086 5 7C5 9.20914 6.79086 11 9 11Z" stroke="#181818" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M23 21V19C22.9993 18.1137 22.7044 17.2528 22.1614 16.5523C21.6184 15.8519 20.8581 15.3516 20 15.13" stroke="#181818" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M16 3.13C16.8604 3.3503 17.623 3.8507 18.1676 4.55231C18.7122 5.25392 19.0078 6.11683 19.0078 7.005C19.0078 7.89317 18.7122 8.75608 18.1676 9.45769C17.623 10.1593 16.8604 10.6597 16 10.88" stroke="#181818" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>                                    
+                                Network
+                            </a>
+                        </li>
+                        <li class="nav-item network-header_item">
+                            <a class="nav-link network-header_link" href="#">
+                                <svg class="network-header__svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20 7H4C2.89543 7 2 7.89543 2 9V19C2 20.1046 2.89543 21 4 21H20C21.1046 21 22 20.1046 22 19V9C22 7.89543 21.1046 7 20 7Z" stroke="#181818" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M16 21V5C16 4.46957 15.7893 3.96086 15.4142 3.58579C15.0391 3.21071 14.5304 3 14 3H10C9.46957 3 8.96086 3.21071 8.58579 3.58579C8.21071 3.96086 8 4.46957 8 5V21" stroke="#181818" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                Jobs
+                            </a>
+                        </li>
+                        <li class="nav-item network-header_item">
+                            <a class="nav-link network-header_link" href="#">
+                                <svg class="network-header__svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M21 15C21 15.5304 20.7893 16.0391 20.4142 16.4142C20.0391 16.7893 19.5304 17 19 17H7L3 21V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H19C19.5304 3 20.0391 3.21071 20.4142 3.58579C20.7893 3.96086 21 4.46957 21 5V15Z" stroke="#181818" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                 </svg>
+                                 <img src="img/count.svg" alt="count">                                    
+                                Chat
+                            </a>
+                        </li>
+                        <li class="nav-item last network-header_item">
+                            <a class="nav-link network-header_link" href="#">
+                                <svg class="network-header__svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M18 8C18 6.4087 17.3679 4.88258 16.2426 3.75736C15.1174 2.63214 13.5913 2 12 2C10.4087 2 8.88258 2.63214 7.75736 3.75736C6.63214 4.88258 6 6.4087 6 8C6 15 3 17 3 17H21C21 17 18 15 18 8Z" stroke="#181818" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M13.73 21C13.5542 21.3031 13.3019 21.5547 12.9982 21.7295C12.6946 21.9044 12.3504 21.9965 12 21.9965C11.6496 21.9965 11.3054 21.9044 11.0018 21.7295C10.6982 21.5547 10.4458 21.3031 10.27 21" stroke="#181818" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                Notices
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-4">
+                    <input type="search" placeholder="Search">
+                </div>
+                <div class="col-3">
+                    <div class="network-header_personalinf">
+                        <img src="img/Rectangle.jpg" alt="">
+                        <div class="Personalpage">
+                            <div class="Name">
+                                <span id="name">D. Kargaev</span>
+                                <span id="person">you</span>
+                            </div>
+                            <div class="Information">
+                                <span id="days">367 views today 
+                                    <span id="number"> +32 <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.5 8.50021L8.5 3.50021" stroke="#02B033" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M3.5 3.50021H8.5V8.50021" stroke="#02B033" stroke-linecap="round" stroke-linejoin="round"/>
+                                     </svg>
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <ul class="nav">
+                        <li class="nav-item menu network-header_item">
+                            <a class="nav-link network-header_link" href="#">
+                                <svg class="network-header__svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 13C12.5523 13 13 12.5523 13 12C13 11.4477 12.5523 11 12 11C11.4477 11 11 11.4477 11 12C11 12.5523 11.4477 13 12 13Z" stroke="#181818" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M19 13C19.5523 13 20 12.5523 20 12C20 11.4477 19.5523 11 19 11C18.4477 11 18 11.4477 18 12C18 12.5523 18.4477 13 19 13Z" stroke="#181818" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                     <path d="M5 13C5.55228 13 6 12.5523 6 12C6 11.4477 5.55228 11 5 11C4.44772 11 4 11.4477 4 12C4 12.5523 4.44772 13 5 13Z" stroke="#181818" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                 </svg>
+                                Other
+                             </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>  
+    <section class="network">
+            <div class="container">
+                <div class="row">
+                    <div class="col-3">
+                        <ul class="nav flex-column network-menu">
+                            <li class="nav-item network-menu__item">
+                              <a class="nav-link network-menu__link active" href="#">
+                                <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0)">
+                                    <path d="M6.9978 9.03973C7.2841 9.42248 7.64937 9.73918 8.06884 9.96835C8.4883 10.1975 8.95214 10.3338 9.4289 10.3679C9.90567 10.4021 10.3842 10.3333 10.832 10.1662C11.2799 9.99919 11.6865 9.73777 12.0245 9.39973L14.0245 7.39973C14.6317 6.77105 14.9676 5.92904 14.9601 5.05506C14.9525 4.18107 14.6019 3.34502 13.9839 2.727C13.3658 2.10897 12.5298 1.75841 11.6558 1.75081C10.7818 1.74322 9.93981 2.0792 9.31114 2.68639L8.16447 3.82639" stroke="#181818" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M9.66428 7.70631C9.37797 7.32355 9.0127 7.00685 8.59324 6.77768C8.17378 6.54851 7.70994 6.41223 7.23318 6.37808C6.75641 6.34394 6.27789 6.41273 5.83005 6.57979C5.38221 6.74684 4.97553 7.00826 4.63761 7.34631L2.63761 9.34631C2.03042 9.97498 1.69444 10.817 1.70203 11.691C1.70963 12.565 2.06019 13.401 2.67822 14.019C3.29624 14.6371 4.13228 14.9876 5.00627 14.9952C5.88026 15.0028 6.72227 14.6668 7.35094 14.0596L8.49094 12.9196" stroke="#181818" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0">
+                                    <rect width="16" height="16" fill="white" transform="translate(0.331055 0.373047)"/>
+                                    </clipPath>
+                                    </defs>
+                                 </svg>
+                                Connections
+                                <span>1,038</span>
+                            </a>
+                            </li>
+                            <li class="nav-item network-menu__item">
+                              <a class="nav-link network-menu__link" href="#" active>
+                                <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g opacity="0.6" clip-path="url(#clip0)">
+                                    <path d="M8.64347 14.6667C12.3254 14.6667 15.3101 11.6819 15.3101 8C15.3101 4.3181 12.3254 1.33333 8.64347 1.33333C4.96158 1.33333 1.97681 4.3181 1.97681 8C1.97681 11.6819 4.96158 14.6667 8.64347 14.6667Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M8.64355 10C9.74812 10 10.6436 9.10457 10.6436 8C10.6436 6.89543 9.74812 6 8.64355 6C7.53899 6 6.64355 6.89543 6.64355 8C6.64355 9.10457 7.53899 10 8.64355 10Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0">
+                                    <rect width="16" height="16" fill="white" transform="translate(0.643555)"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                                 Invitations
+                                <span class="New">
+                                    <p>2</p>  
+                                    <img src="img/Rectangle (2).svg" alt="">
+                                </span>
+                               
+                            </a>
+                            </li>
+                            <li class="nav-item item network-menu__item">
+                              <a class="nav-link network-menu__link" href="#">
+                                <svg width="17" height="16" viewBox="0 0 17 16" fill="none">
+                                    <g clip-path="url(#clip0)">
+                                    <path d="M14.8896 5.33333V14H2.88965V5.33333" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M16.2231 2H1.5564V5.33333H16.2231V2Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M7.5564 8H10.2231" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0">
+                                    <rect width="16" height="16" fill="white" transform="translate(0.889648)"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>   
+                                Teammates
+                            </a>
+                            </li>
+                            <li class="nav-item item network-menu__item">
+                                <a class="nav-link network-menu__link" href="#">
+                                    <svg width="16" height="17" viewBox="0 0 16 17" fill="none">
+                                        <g clip-path="url(#clip0)">
+                                            <path d="M11.3334 14.2686V12.9352C11.3334 12.228 11.0525 11.5497 10.5524 11.0496C10.0523 10.5495 9.37399 10.2686 8.66675 10.2686H3.33341C2.62617 10.2686 1.94789 10.5495 1.4478 11.0496C0.9477 11.5497 0.666748 12.228 0.666748 12.9352V14.2686" stroke="#181818" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                             <path d="M5.99992 7.60189C7.47268 7.60189 8.66659 6.40798 8.66659 4.93522C8.66659 3.46246 7.47268 2.26855 5.99992 2.26855C4.52716 2.26855 3.33325 3.46246 3.33325 4.93522C3.33325 6.40798 4.52716 7.60189 5.99992 7.60189Z" stroke="#181818" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M15.3333 14.2686V12.9353C15.3328 12.3444 15.1362 11.7704 14.7742 11.3035C14.4122 10.8365 13.9053 10.503 13.3333 10.3553" stroke="#181818" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                             <path d="M10.6667 2.35526C11.2404 2.50212 11.7488 2.83572 12.1118 3.30346C12.4749 3.7712 12.672 4.34647 12.672 4.93859C12.672 5.5307 12.4749 6.10598 12.1118 6.57371C11.7488 7.04145 11.2404 7.37505 10.6667 7.52192" stroke="#181818" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0">
+                                                 <rect width="16" height="16" fill="white" transform="translate(0 0.268555)"/>
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                    Groups
+                                    <span>6</span>
+                                </a>
+                            </li>
+                            <li class="nav-item item network-menu__item">
+                                <a class="nav-link network-menu__link" href="#">
+                                    <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0)">
+                                        <path d="M8.70988 1.78061L2.04321 5.11394L8.70988 8.44728L15.3765 5.11394L8.70988 1.78061Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M2.04321 11.7806L8.70988 15.1139L15.3765 11.7806" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M2.04321 8.44727L8.70988 11.7806L15.3765 8.44727" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </g>
+                                        <defs>
+                                        <clipPath id="clip0">
+                                        <rect width="16" height="16" fill="white" transform="translate(0.709961 0.447266)"/>
+                                        </clipPath>
+                                        </defs>
+                                    </svg>
+                                  
+                                    Pages
+                                    <span>28</span>
+                                </a>
+                            </li>
+                            <li class="nav-item item network-menu__item">
+                                <a class="nav-link network-menu__link" href="#">
+                                    <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.50854 6.75195H14.1752" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M3.50854 10.752H14.1752" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M7.50838 2.75195L6.17505 14.752" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M11.5084 2.75195L10.175 14.752" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    Hashtags
+                                    <span>8</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>  
+                    <div class="col-9">   
+                        <ul class="nav nav-tabs request-menu">
+                            <li class="nav-item  request-menu_item">
+                              <a class="nav-link request-menu_link" href="#">Recieved</a>
+                            </li>
+                            <li class="nav-item request-menu_item">
+                              <a class="nav-link request-menu_link" href="#">Sent</a>
+                            </li>            
+                         </ul>
+                        <div class="box coonections"> 
+                            <svg id = "left" width="290" height="2" viewBox="0 0 300 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <line y1="0.5" x2="300" y2="0.5" stroke="#9a9ea3"/>
+                             </svg>  
+                             <p>you have <span id='color'>2 new connections</span> </p>
+                            <svg id = "right" width="290" height="2" viewBox="0 0 300 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <line y1="0.5" x2="300" y2="0.5" stroke="#9a9ea3"/>
+                            </svg>                          
+                         </div>
+                        <div class="notification">
+                             <div class="Brandon">
+                                <img src="img/Photo.jpg" alt="Brandon">
+                                <div class="name">
+                                    <span>Brandon Wilson</span>
+                                    <p>Senior UX designer</p>
+                                    <a href="#">623 connections</a>                                  
+                                </div>
+                                <div class='note'>
+                                    <p>Hey, I saw your works. I like it! Can we do something together? Or maybe you have project for UX at the moment?</p>
+                                </div>
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-primary btn-sm btn_acept">Acept</button>
+                                    <button type="button" class="btn btn-primary btn-sm btn_decline">decline</button>
+                                </div>
+                             </div>
+                             <div class="Theresa">
+                                 <img src="img/Photo-1.jpg" alt="Theresa">
+                                 <div class="name">
+                                    <span>Theresa Steward</span>
+                                    <p>iOS developer</p>
+                                    <a href="#">481 connections</a>                                  
+                                </div>
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-primary btn-sm btn_acept">Acept</button>
+                                    <button type="button" class="btn btn-secondary btn-sm btn_decline">decline</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box recent">
+                             <svg id = "left" width="290" height="2" viewBox="0 0 300 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <line y1="0.5" x2="300" y2="0.5" stroke="#9a9ea3"/>
+                                </svg>  
+                            <p>recent connections</p>
+                             <svg id = "right" width="290" height="2" viewBox="0 0 300 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <line y1="0.5" x2="300" y2="0.5" stroke="#9a9ea3"/>
+                            </svg> 
+                        </div>
+                            <div class="recent">
+                                <div class="Audrey">
+                                     <img src="img/Andrey.jpg" alt="Andrey">
+                                    <div class="name">
+                                         <span>Audrey Alexander</span>
+                                         <p>Team lead at Google</p>
+                                         <span id="data">Yesterday, 14:30</span>
+                                    </div>
+                                 </div>
+                            
+                                <div class="Kyle">
+                                    <img src="img/Kyle.jpg" alt="Kyle">
+                                    <div class="name">
+                                        <span>Kyle Fisher</span>
+                                        <p>Product designer at Commandor Corp</p>
+                                        <span id="data">Yesterday, 12:03</span>
+                                    </div>
+                                </div>
+
+                                <div class="Darlene">
+                                    <img src="img/Darlene.jpg" alt="Darlene">
+                                    <div class="name">
+                                        <span>Darlene Black</span>
+                                        <p>HR-manager, 10 000 connections</p>
+                                        <span id="data">26 aug, monday</span>
+                                    </div>
+                                </div>
+
+                                <div class="Eduardo">
+                                    <img src="img/Eduardo.jpg" alt="Eduardo">
+                                    <div class="name">
+                                        <span>Eduardo Russell</span>
+                                        <p>Full stack developer at Yandex</p>
+                                        <span id="data">25 aug, sunday</span>
+                                    </div>
+                                </div>
+                             </div>
+
+
+                    </div>  
+                </div>
+                
+            </div>
+        
+    </section>
 </body>
 </html>
