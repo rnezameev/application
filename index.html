@@ -5,12 +5,92 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="preconnect" href="https://fonts.gstatic.com"> 
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="bootstrap/bootstrap-grid.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  
+    <section class="network container-fluid">
+        <div class="row no-gutters">
+            <div class="col-md-5 col-xs-12 no-gutters">
+                 <div class="container-1">
+                    <img class="container-1__logo" src="img/logo.svg" alt="logo">
+                    <img id = "squre" src="img/squre.svg" alt="squre">
+                     <div class="conteiner-1__inf">
+                        <img id="quote"src="img/“.svg" alt="quote">
+                         <p>The passage experienced a surge in popularity during the 1960s when Letraset used it on their dry-transfer sheets, and again during the 90s as desktop publishers bundled the text with their software.</p>
+                         <span>Vincent Obi </span>
+                         <img src="img/green circle.svg" alt="circle">
+                         <svg width="34" height="33" viewBox="0 0 34 33" fill="none">
+                            <path d="M21 0H33.5V33H0V20.5H21V0Z" fill="white"/>
+                            </svg>
+                    </div>
+                    <img id ="circle" src="img/red circls.svg" alt="circles">
+                 </div>
+                 <!-- Контейнер закончился -->
+            </div>
+            <div class="col-md-7 col-xs-12 no-gutters">
+                <div class="container-2">
+                    <div class="container-2__register">
+                        <div class="row justify-content-between">
+                            <div class="col-4">
+                                <div class="container-2__back">
+                                    <svg width="10" height="18" viewBox="0 0 10 18" fill="none">
+                                        <path d="M9.86251 2.225L8.37918 0.75L0.137512 9L8.38751 17.25L9.86251 15.775L3.08751 9L9.86251 2.225Z" fill="#8692A6"/>
+                                        </svg>
+                                    <a href="#">Back</a>
+                                
+                                </div>
+                            </div>
+                            <div class="col-2 step">
+                                <div class="container-2__right">
+                                    <span>Step 01/03</span>
+                                </div>
+                               
+                            </div>
+                        </div>  
+                        <div class="row justify-content-end">
+                            <div class="col-3 info">
+                                <div class="container-2__rightbottom">
+                                    <span>Personal Info.</span>
+                                </div>
+                            </div>   
+                         </div>
+                         <div class="container-2__registerform col-7 offset-md-3">
+                            <h1>Register Individual Account!</h1>
+                            <p>For the purpose of industry regulation, your details are required.</p>
+                            <form action="#">
+                                <label for="fullname">Your fullname *</label>
+                                <input type="text" id="fullname" placeholder="Enter your fullname">
+
+                                <label for="email">Email address *</label>
+                                <input type="email" id="email" placeholder="Enter email address">
+                                <label for="password">Create password *</label>
+                                <input type="password" id="password" placeholder="Enter password">
+                            <div class="container-2__checkbox">   
+                                <label class="container-2-checkbox">I agree to terms & conditions
+                                    <input type="checkbox" checked="checked">
+                                    <span class="checkmark"></span>  
+                                </label>      
+                            </div>
+                            </form>
+                            
+                        </div>
+                        <div class="container-2__buttom col-7 offset-md-3">
+                             <button type="button" id = "register" class="btn btn-primary btn-lg">Register Account</button>
+                             <div class="line">
+                                 <span>Or</span>
+                             </div>
+                             <button type="button" id = "google" class="btn btn-primary btn-lg"> <img src="img/google.svg" alt="googlelogo"> Register with Google</button>
+                             
+                        </div>
+                     </div>
+                </div>
+                  <!-- Контейнер закончился -->
+        </div> 
+    </section>
 </body>
 </html>
